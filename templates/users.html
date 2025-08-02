@@ -1,0 +1,14 @@
+{% extends "base.html"%}
+
+{% block content%}
+<h1>USERS</h1>
+{% for user in users%}
+<ul>
+    <li><h1> {{user.username}} </h1></li>
+    <li><img src="{{url_for('static',filename=user.avatar)}}"></li>
+     <li><p>{{user.email}}</p></li>
+     <li><p>{{user.password}}</p></li>
+
+</ul>
+{% endfor%}
+{% endblock%}

@@ -1,0 +1,20 @@
+{% extends "base.html"%}
+
+{% block content%}
+<h1>add user</h1>
+<form action="/add_user" method="POST" enctype="multipart/form-data">
+    <label>Name</label>
+    <input type="text" name="username" value="" required>
+
+    <label>Email</label>
+    <input type="email" name="email" value="" required>
+    <label>Passsword</label>
+    <input type="password" name="password" value="" required>
+    <input type="submit" value="add user">
+</form>
+
+
+
+
+
+{% endblock%}

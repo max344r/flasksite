@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+
+</head>
+<body>
+<nav class="top-menu">
+        <ul class="menu-main">
+            <li><a href="/" class="my">main</a></li>
+            <li><a href="/add_user" class = "my">add_user</a></li>
+            {% if current_user.is_authenticated %}
+            <li><a href="/add_post" class = "my">add_post</a></li>
+            <li><a href="/profile/{{current_user.username}}" class = "my">profile</a></li>
+            {% else %}
+             <li><a href="/login" class = "my">login</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+{% block content%}
+{% endblock%}
+</body>
+</html>

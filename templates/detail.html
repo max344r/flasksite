@@ -1,0 +1,9 @@
+{% extends "base.html"%}
+
+{% block content%}
+<h1><i>Detailed Post</i></h1>
+    <li><h1>{{animal.title}}</h1></li>
+     <li><p>{{animal.description}}</p></li>
+<li><img src="{{url_for('static',filename=animal.img)}}"></li>
+     <li><p style="text-allign:right;">{{animal.data}}</p></li>
+{% endblock%}
