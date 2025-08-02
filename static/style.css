@@ -1,0 +1,128 @@
+h1 {
+    color: blue;
+    font-size: 55px;
+    font-family: fantasy;
+}
+
+p {
+    color: purple;
+    font-size: 50px;
+    font-family: serif;
+
+}
+
+body{
+    text-align: center;
+    background-image: url("https://cdn.urlaubsguru.at/wp-content/uploads/2018/01/shutterstock_1225386928.jpg");
+}
+
+img {
+    width:500px;
+    border-radius: 600px;
+}
+a   {
+    display: inline-block;
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  border: 2px double white;
+  cursor: pointer;
+  font-size: 25px;
+}
+a:hover{
+    color: purple;
+    font-size: 45px;
+}
+button   {
+    display: inline-block;
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  border: 2px double white;
+  cursor: pointer;
+  font-size: 25px;
+}
+button:hover{
+    color: purple;
+    font-size: 45px;
+}
+.top-menu {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.menu-main {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-main li {
+    margin-right: 20px;
+    color:green;
+    font-size:20px;
+}
+
+.menu-main a {
+    color: #000;
+    text-decoration: none;
+}
+.my {
+  text-decoration: none;
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  transition: .3s;
+}
+.my:hover {
+  background: #28b74c;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color:#f0f0f0;
+  transition: .3s;
+}
+
+.my_bd {
+  text-decoration: none;
+  display: inline-block;
+  width: 140px;
+  height: 60px;
+  line-height: 60px; /* Установить line-height равным высоте кнопки /
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -1px; / Уменьшить расстояние между словами /
+  font-weight: 600;
+  color: white; / Цвет текста белый */
+  background: rgb(22, 155, 179);
+  box-shadow: 0 8px 15px rgba(228, 224, 224, 0.1);
+  transition: .3s;
+}
+
+.my_bd:hover {
+  background: #e2d521;
+  box-shadow: 0 15px 20px rgba(24, 29, 27, 0.4);
+  color:#0d1fbd;
+  transition: .3s;
+}
